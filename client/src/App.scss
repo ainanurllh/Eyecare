@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --primaryColor: #0077b6;
+    --hoverColor: #00b4d8;
+    --paleGreen: #caf0f8;
+    --whiteColor: #ffffff;
+    --blackColor: #000000;
+    --greyText: #6c757d;
+    --bgColor: #f1f5f9;
+    --inputColor: #e9ecef;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+html {
+    font-size: 95%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hoverColor);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.9rem 1.5rem;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: var(--hoverColor);
+    transform: scale(1.05);
+}
+
+.loginPage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgColor);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi dua bagian */
+    width: 90%;
+    max-width: 900px;
+    height: 620px; /* Tambahkan tinggi agar simetris */
+    background: var(--whiteColor);
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.colorContainer {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.formDiv {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.headerDiv {
+    text-align: center;
+    margin-bottom: 1.9rem;
+}
+
+.inputDiv {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 0.20rem;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--greyText);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    background: var(--inputColor);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.input:focus-within {
+    border-color: var(--hoverColor);
+    box-shadow: 0px 4px 8px rgba(0, 180, 216, 0.3);
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.1rem;
+    font-size: 1rem;
+}
+
+.icon {
+    margin-right: 12px;
+    font-size: 1.3rem;
+    color: var(--blackColor);
+}
+
+.footerDiv {
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Memberikan jarak antara teks dan tombol */
+}
+
+.footerDiv .btn {
+    padding: 6px 12px; /* Mengurangi padding agar tidak terlalu besar */
+    font-size: 0.9rem; /* Menyesuaikan ukuran font */
+    border-radius: 8px; /* Membuat sudutnya lebih halus */
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+
